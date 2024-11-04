@@ -1,0 +1,14 @@
+services:
+  frontend:
+    container_name: 'admin'
+    build: 
+      context: ./admin
+    ports:
+      - "3000:3000" 
+
+  backend:
+    container_name: 'backend'
+    build: 
+      context: ./Backend
+    ports:
+      - "8000:8000"  
